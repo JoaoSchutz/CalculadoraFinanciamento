@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Semana 1</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+  </head>
+
+
+  <body>
+    <h1>Simulação de Financiamento</h1>
+  <div>
+  <label>Valor:</label>
+  <input type = "number" id ="valor"> 
+  
+  <label>Prazo(em anos):</label>
+  <input type = "number" id ="prazoano">
+
+  <label>Juros ao ano:</label>
+  <input type = "number" id ="jurosano"><br>
+  <br>
+  <button onclick = "jurosaomes();prazo();jurosacumulados();linha1();linha2();linha3();linha4();linha5()" id = "btsimular">Calcular</button>
+  </div>
+  <h1>Resultado</h1>
+    <div>
+  <label>Prazo(meses):</label>
+  <input type = "number" id ="prazomes">
+
+  <label>Juros ao mês:</label>
+  <input type = "number" id ="jurosmes">
+
+  <label>Juros acumulados:</label>
+  <input type = "number" id ="jurosacum">
+    </div>
+<br>
+<table>
+  <tr>
+    <td>Prestação</td>
+    <td>Amortização</td>
+    <td>Juros</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><span id = "armo1"></span></td>
+    <td><span id = "juros1"></span></td>
+    <td><span id = "total1"></span></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><span id = "armo2"></span></td>
+    <td><span id = "juros2"></span></td>
+    <td><span id = "total2"></span></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><span id = "armo3"></span></td>
+    <td><span id = "juros3"></span></td>
+    <td><span id = "total3"></span></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><span id = "armo4"></span></td>
+    <td><span id = "juros4"></span></td>
+    <td><span id = "total4"></span></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><span id = "armo5"></span></td>
+    <td><span id = "juros5"></span></td>
+    <td><span id = "total5"></span></td>
+  </tr>
+
+</table>
+<br>
+<div><button onclick = "limpar()">Limpar</button></div>
+
+
+<script type="text/javascript" src="interacao.js"></script>
+  </body>
+
+</html>
